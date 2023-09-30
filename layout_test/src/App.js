@@ -1,46 +1,55 @@
-import { useState } from 'react';
-import image from './images/godzillavskong.jpg'
-import TextInput from './TextInput';
-import TextBlock from './TextBlock';
+import { useState } from "react";
+import image from "./images/godzillavskong.jpg";
+import TextInput from "./TextInput";
+import TextBlock from "./TextBlock";
 
-import './index.css'
+import "./index.css";
+import Badge from "./images/Badge";
 
 function App() {
-  const [value1, setValue1] = useState("")
-  const [value2, setValue2] = useState("")
-  
+  const [value1, setValue1] = useState("");
+  const [value2, setValue2] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(value1)
-  }
-
-
+    e.preventDefault();
+    console.log(value1);
+  };
 
   return (
     <>
       <div>
-        <img src={image}/>
+        <img src={image} />
       </div>
       <form onSubmit={handleSubmit}>
-        <TextInput 
+        <TextInput
           type="text"
           value={value1}
           placeholder="text input"
-          onChange = {(e) => {setValue1(e.target.value)}}
+          onChange={(e) => {
+            setValue1(e.target.value);
+          }}
         />
-        <TextInput 
+        <TextInput
           type="text"
           value={value2}
           placeholder="text input"
-          onChange = {(e) => {setValue2(e.target.value)}}
+          onChange={(e) => {
+            setValue2(e.target.value);
+          }}
         />
       </form>
       <div></div>
       <TextBlock></TextBlock>
-      <div className='largerectangle'></div>
+      <div className="largerectangle"></div>
+      <section>
+        <Badge />
+        <Badge />
+        <Badge />
+        <Badge />
+      </section>
+      <TextBlock></TextBlock>
     </>
-  )
+  );
 }
 
 export default App;
