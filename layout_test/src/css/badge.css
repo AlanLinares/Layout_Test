@@ -1,11 +1,15 @@
 .square {
     height: 50px;
     width: 50px;
+    margin: 10px;
+    border-radius: 10px;
     background-color: #555;
 }
 .circle {
     height: 50px;
     width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: #555;
     border-radius: 50%;
 }

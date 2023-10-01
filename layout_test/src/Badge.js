@@ -1,12 +1,14 @@
 import React from 'react'
 
-import './badge.css'
+import './css/badge.css'
 
 const Badge = () => {
   return (
     <>
+      <div>
         <div className='square'></div>
         <div className='circle'></div>
+      </div>
     </>
 
   )

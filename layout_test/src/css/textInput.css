@@ -1,0 +1,12 @@
+input{
+    
+    width: 100%;
+    background-color: rgba(238, 237, 237, 0.842);
+    display:block;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
