@@ -11,6 +11,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media screen and (max-width:480px) {
+  .container{
+    flex-direction: column;
+    width: 250px;
+  }
+  .largerectangle{
+    width: 40%
+  }
+  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -21,25 +31,46 @@ code {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  margin-top: 20px;
+  /* margin-top: 20px;
   align-items: center;
+  background-size: cover; */
 }
 .btn{
-  width: 10%;
+  width: 15%;
   border-radius: 8px;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
   color: white;
+  border:1px solid;
+  box-sizing: border-box;
   background-color: rgb(133, 216, 9);
+  
+}
+.buttonwrap{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .container{
   height:100%;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 4%;
+  margin: 20px auto;
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
 }
+.container-left{
+  padding: 2%;
+}
+
+.container-right {
+  padding: 2%;
+  flex-direction: column;
+  align-items: center;
+}
+
 form{
   display:flex;
   flex-direction: column;
@@ -48,17 +79,17 @@ form{
 }
 
 .largerectangle {
-  height: 100%;
+  /* height: 100%; */
   width: 80%;
   padding:10%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   border-radius: 10px;
   background-color: grey;
 }
 
 .badge{
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   width:100%;
   display: flex;
   justify-content: space-around;

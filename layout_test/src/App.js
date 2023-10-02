@@ -18,38 +18,45 @@ function App() {
   return (
     <>
       <div className="container">
-        <div >
-          <img className="topimage" src={image} />
+        <div className="container-left">
+          <div >
+            <img className="topimage" src={image} />
+          </div>
+          <form onSubmit={handleSubmit}>
+            <TextInput
+              type="text"
+              value={value1}
+              placeholder="text input"
+              onChange={(e) => {
+                setValue1(e.target.value);
+              }}
+            />
+            <TextInput
+              type="text"
+              value={value2}
+              placeholder="text input"
+              onChange={(e) => {
+                setValue2(e.target.value);
+              }}
+            />
+          </form>
+          
+          <TextBlock></TextBlock>
         </div>
-        <form onSubmit={handleSubmit}>
-          <TextInput
-            type="text"
-            value={value1}
-            placeholder="text input"
-            onChange={(e) => {
-              setValue1(e.target.value);
-            }}
-          />
-          <TextInput
-            type="text"
-            value={value2}
-            placeholder="text input"
-            onChange={(e) => {
-              setValue2(e.target.value);
-            }}
-          />
-        </form>
-        
-        <TextBlock></TextBlock>
-        <div className="largerectangle"></div>
-        <section className="badge">
-          <Badge />
-          <Badge />
-          <Badge />
-          <Badge />
-        </section>
-        <TextBlock></TextBlock>
-        <button className="btn">submit</button>
+
+        <div className="container-right">
+          <div className="largerectangle"></div>
+          <section className="badge">
+            <Badge />
+            <Badge />
+            <Badge />
+            <Badge />
+          </section>
+          <TextBlock></TextBlock>
+          <div className="buttonwrap">
+            <button className="btn">submit</button>
+          </div>
+        </div>
       </div>
     </>
   );
