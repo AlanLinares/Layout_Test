@@ -71,6 +71,13 @@ code {
   align-items: center;
 }
 
+.divider{
+  position: relative;
+  border: 2px solid rgb(219, 215, 215);
+  height:90%;
+  margin-top: 30px;
+}
+
 form{
   display:flex;
   flex-direction: column;
@@ -88,10 +95,10 @@ form{
 }
 
 .badge{
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width:100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }

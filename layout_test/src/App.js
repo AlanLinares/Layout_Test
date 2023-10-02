@@ -43,7 +43,9 @@ function App() {
           
           <TextBlock></TextBlock>
         </div>
-
+        <div>
+          <div className="divider"></div>
+        </div>
         <div className="container-right">
           <div className="largerectangle"></div>
           <section className="badge">
