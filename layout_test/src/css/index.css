@@ -19,6 +19,9 @@ body {
   .largerectangle{
     width: 40%
   }
+  .divider{
+    visibility: hidden;
+  }
   
 }
 
