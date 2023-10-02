@@ -10,10 +10,13 @@ function App() {
   const [value1, setValue1] = useState("");
   const [value2, setValue2] = useState("");
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(value1);
-  };
+    alert("value 1: "+value1 +" "+ "value 2: "+value2)
+    setValue1("")
+    setValue2("")
+  }
 
   return (
     <>
@@ -56,7 +59,7 @@ function App() {
           </section>
           <TextBlock></TextBlock>
           <div className="buttonwrap">
-            <button className="btn">submit</button>
+            <button className="btn" onClick={handleSubmit}>submit</button>
           </div>
         </div>
       </div>
